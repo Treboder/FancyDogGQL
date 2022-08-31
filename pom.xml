@@ -57,13 +57,13 @@
 			<scope>test</scope>
 		</dependency>
 
-
-<!--		remove according to https://github.com/graphql-java-kickstart/graphql-java-tools/issues/157-->
-<!--		<dependency>-->
-<!--			<groupId>com.graphql-java</groupId>-->
-<!--			<artifactId>graphql-spring-boot-starter</artifactId>-->
-<!--			<version>5.0.2</version>-->
-<!--		</dependency>-->
+<!--    removal leads to a startup without errors, but also to to Query.java not working
+		https://github.com/graphql-java-kickstart/graphql-java-tools/issues/157-->
+		<dependency>
+			<groupId>com.graphql-java</groupId>
+			<artifactId>graphql-spring-boot-starter</artifactId>
+			<version>5.0.2</version>
+		</dependency>
 
 		<dependency>
 			<groupId>com.graphql-java</groupId>

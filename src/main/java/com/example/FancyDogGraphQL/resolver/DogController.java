@@ -1,15 +1,26 @@
-//package com.example.FancyDogGraphQL.resolver;
-//
-//import com.example.FancyDogGraphQL.entity.Dog;
-//import org.springframework.graphql.data.method.annotation.QueryMapping;
-//import org.springframework.stereotype.Controller;
-//
-//import java.util.List;
-//
-//@Controller
-//public class DogController {
-//
-//    @QueryMapping
-//    public List<Dog> findAllDogs() { return Dog.dogs; }
-//
-//}
+package com.example.FancyDogGraphQL.resolver;
+
+import com.example.FancyDogGraphQL.entity.Dog;
+import com.example.FancyDogGraphQL.repository.DogRepository;
+import org.springframework.graphql.data.method.annotation.QueryMapping;
+import org.springframework.stereotype.Controller;
+
+import java.util.List;
+import java.util.Scanner;
+
+@Controller
+public class DogController {
+
+    private DogRepository dogRepository;
+
+    public DogController(DogRepository dogRepository) {
+        this.dogRepository = dogRepository;
+    }
+
+    @QueryMapping
+    public List<Dog> findAllDogs() {
+        //return Dog.dogs;
+        return (List<Dog>) dogRepository.findAll();
+    }
+
+}

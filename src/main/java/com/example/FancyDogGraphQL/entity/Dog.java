@@ -51,7 +51,7 @@ public class Dog {
         this.origin = origin;
     }
 
-    // static method to be used by DogController
+    // static method to be used by DogController for debugging
     public static List<Dog> dogs = Arrays.asList(
             new Dog("Fluffy", "Pomeranian", "Mountain View, CA"),
             new Dog("Spot", "Pit Bull", "Austin, TX"),
