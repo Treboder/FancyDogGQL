@@ -19,8 +19,8 @@ public class DogController {
 
     @QueryMapping
     public List<Dog> findAllDogs() {
-        //return Dog.dogs;
         return (List<Dog>) dogRepository.findAll();
+        //return Dog.dogs;
     }
 
 }

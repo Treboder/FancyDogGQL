@@ -19,7 +19,7 @@
 //
 //    // linked to the query findAllDogs: [Dog]! as defined in dog.graphqls section "type QUERY"
 //    @QueryMapping
-//    public List<Dog> findAllDogs() {
+//    public Iterable<Dog> findAllDogs() {
 //        return (List<Dog>) dogRepository.findAll();
 //        //return Dog.dogs;
 //    }
