@@ -57,11 +57,13 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>com.graphql-java</groupId>
-			<artifactId>graphql-spring-boot-starter</artifactId>
-			<version>5.0.2</version>
-		</dependency>
+
+<!--		remove according to https://github.com/graphql-java-kickstart/graphql-java-tools/issues/157-->
+<!--		<dependency>-->
+<!--			<groupId>com.graphql-java</groupId>-->
+<!--			<artifactId>graphql-spring-boot-starter</artifactId>-->
+<!--			<version>5.0.2</version>-->
+<!--		</dependency>-->
 
 		<dependency>
 			<groupId>com.graphql-java</groupId>
