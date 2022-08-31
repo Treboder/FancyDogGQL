@@ -1,4 +1,4 @@
-package com.example.FancyDogGQL;
+package com.example.FancyDogGraphQL;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

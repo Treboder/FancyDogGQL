@@ -1,4 +1,4 @@
-package com.example.FancyDogGQL.entity;
+package com.example.FancyDogGraphQL.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

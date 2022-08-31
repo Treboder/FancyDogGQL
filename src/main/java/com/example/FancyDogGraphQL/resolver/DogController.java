@@ -1,6 +1,6 @@
-package com.example.FancyDogGQL.resolver;
+package com.example.FancyDogGraphQL.resolver;
 
-import com.example.FancyDogGQL.entity.Dog;
+import com.example.FancyDogGraphQL.entity.Dog;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
 

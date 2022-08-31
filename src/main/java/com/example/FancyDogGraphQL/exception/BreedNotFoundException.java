@@ -1,4 +1,4 @@
-package com.example.FancyDogGQL.exception;
+package com.example.FancyDogGraphQL.exception;
 
 
 import graphql.ErrorType;
