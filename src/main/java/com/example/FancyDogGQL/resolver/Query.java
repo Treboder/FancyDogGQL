@@ -1,6 +1,5 @@
 //package com.example.FancyDogGQL.resolver;
 //
-//
 //import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 //import com.example.FancyDogGQL.entity.Dog;
 //import com.example.FancyDogGQL.exception.DogNotFoundException;
@@ -23,12 +22,12 @@
 //    }
 //
 //    // linked to the query findDogById(id:ID!): Dog! as defined in dog.graphqls section "type QUERY"
-//    public Dog findDogById(Long id) {
-//        Optional<Dog> optionalDog = dogRepository.findById(id);
-//        if (optionalDog.isPresent()) {
-//            return optionalDog.get();
-//        } else {
-//            throw new DogNotFoundException("Dog Not Found", id);
-//        }
-//    }
+////    public Dog findDogById(Long id) {
+////        Optional<Dog> optionalDog = dogRepository.findById(id);
+////        if (optionalDog.isPresent()) {
+////            return optionalDog.get();
+////        } else {
+////            throw new DogNotFoundException("Dog Not Found", id);
+////        }
+////    }
 //}

@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.Arrays;
+import java.util.List;
 
 @Entity
 public class Dog {
@@ -48,5 +50,14 @@ public class Dog {
     public void setOrigin(String origin) {
         this.origin = origin;
     }
+
+    public static List<Dog> dogs = Arrays.asList(
+            new Dog("Fluffy", "Pomeranian", "Mountain View, CA"),
+            new Dog("Spot", "Pit Bull", "Austin, TX"),
+            new Dog("Ginger", "Cocker Spaniel", "Kansas City, KS"),
+            new Dog("Lady", "Direwolf", "The North"),
+            new Dog("Sasha", "Husky", "Buffalo, NY")
+    );
+
 
 }
