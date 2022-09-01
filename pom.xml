@@ -34,21 +34,19 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>com.graphql-java</groupId>
-			<artifactId>graphql-spring-boot-starter</artifactId>
-			<version>5.0.2</version>
-		</dependency>
+<!-- 	According to https://blog.devgenius.io/graphql-with-spring-boot-starter-graphql-7b406998c0b5 -->
+<!--	with Spring 2.7.3 we use spring-boot-starter-graphql instead of graphql-spring-boot-starter and graphql-java-tools,-->
+<!--		which also means that GraphQLQueryResolver interface no longer used -->
 
 		<dependency>
-			<groupId>com.graphql-java</groupId>
-			<artifactId>graphql-java-tools</artifactId>
-			<version>5.2.4</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-graphql</artifactId>
 		</dependency>
 
 		<dependency>
@@ -56,17 +54,6 @@
 			<artifactId>graphiql-spring-boot-starter</artifactId>
 			<version>5.0.2</version>
 		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.graphql</groupId>
-			<artifactId>spring-graphql</artifactId>
-			<version>1.0.1</version>
-		</dependency>
-
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-graphql</artifactId>-->
-<!--		</dependency>-->
 
 	</dependencies>
 
