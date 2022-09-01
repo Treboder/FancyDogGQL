@@ -21,7 +21,7 @@ Both are not required/supported since Spring Boot 2.7.0 and replaced with Annota
 Also see [blog.devgenius.io](https://blog.devgenius.io/graphql-with-spring-boot-starter-graphql-7b406998c0b5)
 where migration to 2.7.0 from earlier versions is described.
 
-### Example Queries
+### Example Queries via GraphiQL
 Navigate to http://localhost:8080/graphiql and place following queries:
 ```
 {
@@ -52,6 +52,18 @@ mutation
     updateDogName(newName: "Rex", id:"3") {
         id
     }
+}
+```
+
+### Example Queries via GraphQL (standard /graphql endpoint)
+Navigate to http://localhost:8080/graphql and send a POST Request with header:
+- key = Content-Type  
+- value = application/json
+
+and following body:
+```
+{
+    "query":"{findAllDogs { id breed } }"
 }
 ```
 
