@@ -33,6 +33,21 @@ Navigate to http://localhost:8080/graphiql and place following queries:
   }
 }
 ```
+```
+mutation
+{
+  deleteDogBreed(breed: "Pit Bull")
+  
+}
+```
+```
+mutation
+{
+    updateDogName(newName: "Rex", id:"3") {
+        id
+    }
+}
+```
 
 ### Reference Documentation
 For further reference, please consider the following sections:
