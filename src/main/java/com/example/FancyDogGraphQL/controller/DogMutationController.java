@@ -38,7 +38,7 @@ public class DogMutationController {
     }
 
     @MutationMapping
-    public Dog updateDogName(@Argument String newName, Long id) {
+    public Dog updateDogName(@Argument String newName, @Argument Long id) {
         Optional<Dog> optionalDog = dogRepository.findById(id);
 
         if (optionalDog.isPresent()) {
